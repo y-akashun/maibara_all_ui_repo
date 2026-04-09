@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="content">
+		<div id="bg" class="background"><img src="img/bg.jpg" alt=""></div>
+		<div id="header" class="header">
+			<div class="title">
+				<div class="main">
+					<div class="main-text1">エネルギー</div>
+					<div class="main-text2">の</div>
+					<div class="main-text1">グリーン化</div>
+					<div class="main-text2">に</div>
+					<div class="main-text1">向けた取り組み</div>
+				</div>
+				<div class="sub">
+					<div id="pagename" class="sub-text1">米原エリアマップ</div>
+				</div>
+			</div>
+			<div class="recycle-sammery">
+				<div class="label">
+					<div class="text1">
+						エリア全体の
+					</div>
+					<div class="text2">
+						再エネ率
+					</div>
+				</div>
+				<div class="value">
+					<div class="text1">
+						50
+					</div>
+					<div class="text2">
+						%
+					</div>
+				</div>
+			</div>
+			<div class="reduction-sammery">
+				<div class="label">
+					<div class="text1">
+						エリア全体の
+					</div>
+					<div class="text2">
+						CO2削減量
+					</div>
+				</div>
+				<div class="value">
+					<div class="text1">
+						500
+					</div>
+					<div class="text2">
+						t
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page1" class="attension page nobg active">
+			<div class="background"><img src="img/attension01.jpg" alt=""></div>
+		</div>
+
+		<div id="page2" class="page inactive"> <!-- 初期表示 -->
+			<div class="background"><img src="img/overview.svg" alt=""></div>
+			<div class="main">
+				<div class="plant sakata"><div class="line1">サカタインクス</div><div class="line2">滋賀工場</div></div>
+				<div class="plant chuo">ヤンマー 中央研究所</div>
+				<div class="plant siyakusho">米原市役所 本庁舎</div>
+				<div class="plant umegahara013 comingsoon">UMEGAHARA013</div>
+				<div class="plant umegahara012">UMEGAHARA012</div>
+				<div class="plant koizumi013 comingsoon">KOIZUMI013</div>
+			</div>
+		</div>
+
+		<div id="page3" class="page overview inactive"> <!-- 初期非表示 -->
+			<div class="layoutbox">
+				<div class="power-generation-area">
+					<div class="info-panel">
+						<div class="panel-title">
+							<p class="title-text1">[発電所]</p> UMEGAHARA012<p class="title-text2">〈市有地〉</p>
+						</div>
+						<div class="panel-contents">
+							<div class="panel-content">
+								<div class="content-pic">
+									<img class="battery" src="./img/battery-storage.svg" alt="">
+								</div>
+								<div class="content-box normal-box">
+									<div class="box-title">
+										蓄電量
+									</div>
+									<div class="box-value">
+										000
+									</div>
+									<div class="box-unit">
+										kW
+									</div>
+								</div>
+							</div>
+							<div class="panel-content">
+								<div class="content-pic">
+									<img class="solar1" src="./img/solar-panel-2.svg" alt="">
+								</div>
+								<div class="content-box normal-box">
+									<div class="box-title">
+										発電量
+									</div>
+									<div class="box-value">
+										000
+									</div>
+									<div class="box-unit">
+										kW
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="info-panel">
+						<div class="panel-title">
+							<p class="title-text1">[発電所]</p> UMEGAHARA013<p class="title-text2">〈遊休地〉</p>
+						</div>
+						<div class="panel-contents">
+							<div class="panel-content">
+								<div class="content-pic">
+									<img class="solar2" src="./img/solar-panel-2.svg" alt="">
+								</div>
+								<div class="content-box normal-box">
+									<div class="box-title">
+										発電量
+									</div>
+									<div class="box-value">
+										000
+									</div>
+									<div class="box-unit">
+										kW
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="info-panel">
+						<div class="panel-title">
+							<p class="title-text1">[発電所]</p> KOIZUMI014<p class="title-text2">〈未利用農地〉</p>
+						</div>
+						<div class="panel-contents">
+							<div class="panel-content">
+								<div class="content-pic">
+									<img class="solar3" src="./img/solar-panel-koizumi.svg" alt="">
+								</div>
+								<div class="content-box normal-box">
+									<div class="box-title">
+										発電量
+									</div>
+									<div class="box-value">
+										000
+									</div>
+									<div class="box-unit">
+										kW
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="arrow">
+					<img src="img/arrow.svg" alt="">
+				</div>
+				<div class="power-consumption-area">
+					<div class="info-panel">
+						<div class="panel-title">
+							米原市役所 本庁舎
+						</div>
+						<div class="panel-contents">
+							<div class="panel-content">
+								<div class="content-pic">
+									<img class="maibara-city-hall-illustration" src="./img/maibara-city-hall-illustration.svg" alt="">
+								</div>
+								<div class="content-box narrow-box">
+									<div class="box-title">
+										再エネ率
+									</div>
+									<div class="box-value">
+										00
+									</div>
+									<div class="box-unit">
+										%
+									</div>
+								</div>
+								<div class="content-box normal-box">
+									<div class="box-title">
+										発電量
+									</div>
+									<div class="box-value">
+										000
+									</div>
+									<div class="box-unit">
+										kW
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="info-panel">
+						<div class="panel-title">
+							ヤンマー 中央研究所
+						</div>
+						<div class="panel-contents">
+							<div class="panel-content">
+								<div class="content-pic">
+									<img class="central-research-lab-illustration" src="./img/central-research-lab-illustration.svg" alt="">
+								</div>
+								<div class="content-box narrow-box">
+									<div class="box-title">
+										再エネ率
+									</div>
+									<div class="box-value">
+										00
+									</div>
+									<div class="box-unit">
+										%
+									</div>
+								</div>
+								<div class="content-box normal-box">
+									<div class="box-title">
+										発電量
+									</div>
+									<div class="box-value">
+										000
+									</div>
+									<div class="box-unit">
+										kW
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="info-panel">
+						<div class="panel-title">
+							サカタインクス 滋賀工場
+						</div>
+						<div class="panel-contents">
+							<div class="panel-content">
+								<div class="content-pic">
+									<img class="sakata-inx-illustration-alt" src="./img/sakata-inx-illustration-alt.svg" alt="">
+								</div>
+								<div class="content-box narrow-box">
+									<div class="box-title">
+										再エネ率
+									</div>
+									<div class="box-value">
+										00
+									</div>
+									<div class="box-unit">
+										%
+									</div>
+								</div>
+								<div class="content-box normal-box">
+									<div class="box-title">
+										発電量
+									</div>
+									<div class="box-value">
+										000
+									</div>
+									<div class="box-unit">
+										kW
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="page4" class="page state inactive">
+			<div class="background">
+				<img src="img/bg3.svg" alt="">
+				<svg id="donut-chart-page3" class="donut-chart"></svg>
+			</div>
+			<div class="left-pane">
+				<div class="info-box">
+					<div class="info-title"></div>
+					<div class="state-box white-bg">
+						<div class="state-title"></div>
+						<div class="values-box green-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-gray"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info-box">
+					<div class="info-title">自家発電<p class="text2">（米原市庁舎 本庁舎）</p></div>
+					<div class="state-box blue-bg">
+						<div class="state-title"></div>
+						<div class="values-box white-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-white"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info-box">
+					<div class="info-title">オフサイト発電<p class="text2">　内訳</p></div>
+					<div class="state-box yellow-bg">
+						<div class="state-title">［発電所］UMEGAHARA012</div>
+						<div class="values-box green-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-green"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="state-box yellow-bg">
+						<div class="state-title">［発電所］UMEGAHARA013</div>
+						<div class="values-box green-text-green">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-green"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="state-box yellow-bg">
+						<div class="state-title">［発電所］KOIZUMI014</div>
+						<div class="values-box green-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-green"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-pane">
+				<div class="info-box">
+					<div class="info-title"></div>
+					<div class="state-box white-bg">
+						<div class="state-title"></div>
+						<div class="values-box gray-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-gray"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page5" class="page state inactive">
+			<div class="background">
+				<img src="img/bg4.svg" alt="">
+				<svg id="donut-chart-page4" class="donut-chart"></svg>
+			</div>
+
+			<div class="left-pane">
+				<div class="info-box">
+					<div class="info-title"></div>
+					<div class="state-box white-bg">
+						<div class="state-title"></div>
+						<div class="values-box green-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-gray"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info-box">
+					<div class="info-title">自家発電<p class="text2">（米原市庁舎 本庁舎）</p></div>
+					<div class="state-box blue-bg">
+						<div class="state-title"></div>
+						<div class="values-box white-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-white"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info-box">
+					<div class="info-title">オフサイト発電<p class="text2">　内訳</p></div>
+					<div class="state-box yellow-bg">
+						<div class="state-title">［発電所］UMEGAHARA012</div>
+						<div class="values-box green-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-green"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="state-box yellow-bg">
+						<div class="state-title">［発電所］UMEGAHARA013</div>
+						<div class="values-box green-text-green">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-green"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="state-box yellow-bg">
+						<div class="state-title">［発電所］KOIZUMI014</div>
+						<div class="values-box green-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-green"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-pane">
+				<div class="info-box">
+					<div class="info-title"></div>
+					<div class="state-box white-bg">
+						<div class="state-title"></div>
+						<div class="values-box gray-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-gray"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page6" class="page state inactive">
+			<div class="background">
+				<img src="img/bg5.svg" alt="">
+				<svg id="donut-chart-page5" class="donut-chart"></svg>
+			</div>
+
+			<div class="left-pane">
+				<div class="info-box">
+					<div class="info-title"></div>
+					<div class="state-box white-bg">
+						<div class="state-title"></div>
+						<div class="values-box green-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-gray"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info-box">
+					<div class="info-title">自家発電<p class="text2">（米原市庁舎 本庁舎）</p></div>
+					<div class="state-box blue-bg">
+						<div class="state-title"></div>
+						<div class="values-box white-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-white"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info-box">
+					<div class="info-title">オフサイト発電<p class="text2">　内訳</p></div>
+					<div class="state-box yellow-bg">
+						<div class="state-title">［発電所］UMEGAHARA012</div>
+						<div class="values-box green-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-green"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="state-box yellow-bg">
+						<div class="state-title">［発電所］UMEGAHARA013</div>
+						<div class="values-box green-text-green">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-green"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="state-box yellow-bg">
+						<div class="state-title">［発電所］KOIZUMI014</div>
+						<div class="values-box green-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-green"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-pane">
+				<div class="info-box">
+					<div class="info-title"></div>
+					<div class="state-box white-bg">
+						<div class="state-title"></div>
+						<div class="values-box gray-text">
+							<div class="value-box">
+								<div class="value1">
+									00
+								</div>
+								<div class="unit1">
+									%
+								</div>
+							</div>
+							<div class="value-separator-gray"></div>
+							<div class="value-box">
+								<div class="value2">
+									000
+								</div>
+								<div class="unit2">
+									kW
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page7" class="attension page nobg inactive">
+			<div class="background"><img src="img/attension02.jpg" alt=""></div>
+		</div>
+		<div id="page8" class="attension page nobg inactive">
+			<div class="background"><img src="img/attension03.jpg" alt=""></div>
+		</div>
+
+	</div>
+
+	<script>
+		const SLIDER = true;
+		const pagename = document.getElementById('pagename');
+
+		const page1 = document.getElementById('page1');
+		const page2 = document.getElementById('page2');
+		const page3 = document.getElementById('page3');
+		const page4 = document.getElementById('page4');
+		const page5 = document.getElementById('page5');
+		const page6 = document.getElementById('page6');
+		const page7 = document.getElementById('page7');
+		const page8 = document.getElementById('page8');
+		const pages = [
+			{title:"", page:page1, hasheader:false},
+			{title:"米原エリアマップ", page:page2, hasheader:true},
+			{title:"発電量と電気の流れ", page:page3, hasheader:true},
+			{title:"本日のエネルギーのグリーン化状況", page:page4, hasheader:true},
+			{title:"本日のエネルギーのグリーン化状況", page:page5, hasheader:true},
+			{title:"本日のエネルギーのグリーン化状況", page:page6, hasheader:true},
+			{title:"", page:page7, hasheader:false},
+			{title:"", page:page8, hasheader:false},
+		]
+			
+		let currentPageIndex = 0;
+		const intervalTime = 5000; // 切り替え間隔 (ミリ秒)
+
+		function switchPage() {
+			const bg = document.getElementById('bg');
+			const header = document.getElementById('header');
+			const currentPageData = pages[currentPageIndex];
+			const nextPageData = pages[(currentPageIndex + 1) % pages.length];
+			const currentPage = currentPageData.page;
+			const nextPage = nextPageData.page;
+			const nextHasNoBg = nextPage.classList.contains('nobg');
+
+			// 次のページに nobg がない場合、先に #bg と #header を表示
+			if (!nextHasNoBg) {
+				bg.style.display = 'block'; // または適切な display 値
+				header.style.display = 'flex'; // または適切な display 値
+			}
+
+			// 現在のページをフェードアウト
+			currentPage.classList.add('fade-out');
+			currentPage.classList.remove('active');
+
+			// フェードアウト完了後に非表示にする
+			currentPage.addEventListener('transitionend', function handleFadeOut() {
+				pagename.innerText = pages[currentPageIndex].title
+				currentPage.classList.remove('fade-out');
+				currentPage.classList.add('inactive');
+				currentPage.removeEventListener('transitionend', handleFadeOut); // イベントリスナーを削除
+
+				// 次のページを表示してフェードイン
+				nextPage.classList.remove('inactive');
+				// 少し遅延させてから fade-in を追加しないと transition が効かない場合がある
+				requestAnimationFrame(() => {
+					requestAnimationFrame(() => {
+						nextPage.classList.add('active');
+						nextPage.classList.add('fade-in');
+					});
+				});
+
+
+				// フェードイン完了後に fade-in クラスを削除
+				nextPage.addEventListener('transitionend', function handleFadeIn() {
+					nextPage.classList.remove('fade-in');
+					// 次のページに nobg がある場合、フェードイン完了後に #bg と #header を非表示
+					if (nextHasNoBg) {
+						bg.style.display = 'none';
+						header.style.display = 'none';
+					}
+					nextPage.removeEventListener('transitionend', handleFadeIn); // イベントリスナーを削除
+				}, { once: true }); // 一度だけ実行
+
+			}, { once: true }); // 一度だけ実行
+
+			// 次のページのインデックスを更新
+			currentPageIndex = (currentPageIndex + 1) % pages.length;
+		}
+
+
+		// 最初の切り替えを少し遅らせる（ページの初期描画を待つ）
+		if(SLIDER){
+			setTimeout(() => {
+				switchPage();
+				setInterval(switchPage, intervalTime);
+			}, 1000);
+		}
+
+	</script>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script>
+		// --- 定数と共通設定 ---
+		const viewBoxSize = 300;
+		const innerDonutThicknessRatio = 0.13;
+		const outerDonutThicknessRatio = 0.23;
+		const radius = viewBoxSize / 2;
+		const innerRadiusInner = radius * (1 - innerDonutThicknessRatio - outerDonutThicknessRatio);
+		const innerRadiusOuter = radius * (1 - outerDonutThicknessRatio);
+		const outerRadiusInner = radius * (1 - outerDonutThicknessRatio);
+		const outerRadiusOuter = radius;
+
+		const colorInner = d3.scaleOrdinal()
+			.domain(['購入電力', 'オフサイト合計', '自家発電']) // 表示順に合わせる
+			.range(['#A2A09C', '#FAD764', '#5282D0']); // 灰、黄、青
+
+		const colorOuter = d3.scaleOrdinal()
+			.domain(['購入電力', 'グリーン電力']) // 表示順に合わせる
+			.range(['#A2A09C', '#4B9E81']); // 灰、緑
+
+		// パイジェネレータ (デフォルト: 3時開始、時計回り)
+		const pieGenerator = d3.pie()
+			.value(d => d.value)
+			.sort(null) // データ配列の順序を維持
+			// .padAngle(0.015); // 全体に隙間が入るため削除
+
+		const arcInnerGenerator = d3.arc()
+			.innerRadius(innerRadiusInner)
+			.outerRadius(innerRadiusOuter);
+
+		const arcOuterGenerator = d3.arc()
+			.innerRadius(outerRadiusInner)
+			.outerRadius(outerRadiusOuter);
+
+		// --- ドーナツセグメント描画関数 ---
+		function drawDonutSegment(targetId, data, segmentType) {
+			const svg = d3.select(`#${targetId}`);
+
+			// --- タイプに応じた設定 ---
+			let segmentData, colorScale, arcGenerator, groupClass;
+			const offsiteTotal = data.オフサイト1 + data.オフサイト2 + data.オフサイト3;
+			const greenTotal = data.自家発電 + offsiteTotal;
+
+			if (segmentType === 'inner') {
+				segmentData = [
+					{ name: '購入電力', value: data.購入電力 },
+					{ name: 'オフサイト合計', value: offsiteTotal },
+					{ name: '自家発電', value: data.自家発電 }
+				];
+				colorScale = colorInner;
+				arcGenerator = arcInnerGenerator;
+				groupClass = 'inner-donut-group';
+			} else if (segmentType === 'outer') {
+				segmentData = [
+					{ name: '購入電力', value: data.購入電力 },
+					{ name: 'グリーン電力', value: greenTotal }
+				];
+				colorScale = colorOuter;
+				arcGenerator = arcOuterGenerator;
+				groupClass = 'outer-donut-group';
+			} else {
+				console.error('Invalid segmentType:', segmentType);
+				return;
+			}
+
+			// --- 描画処理 ---
+			// SVG基本設定 (初回のみ)
+			if (svg.attr("viewBox") === null) {
+				svg.attr("viewBox", `0 0 ${viewBoxSize} ${viewBoxSize}`)
+				   .attr("preserveAspectRatio", "xMidYMid meet");
+			}
+
+			// 描画用グループを取得または作成
+			// 描画用グループを取得または作成し、回転を適用
+			let g = svg.select(`g.${groupClass}`);
+			if (g.empty()) {
+				g = svg.append("g")
+					.attr("class", groupClass)
+					// 中央揃えのみ
+					.attr("transform", `translate(${viewBoxSize / 2}, ${viewBoxSize / 2})`);
+			} else {
+				// 既存グループにも transform を設定 (再描画時に回転がリセットされないように)
+				// 中央揃えのみ (回転はCSSで行う)
+				g.attr("transform", `translate(${viewBoxSize / 2}, ${viewBoxSize / 2})`);
+				// 既存グループの中身をクリア (再描画のため)
+				g.selectAll("*").remove();
+			}
+
+
+			// パイデータ計算
+			const pieData = pieGenerator(segmentData);
+
+			// パス要素のデータバインドと描画 (Update, Enter, Exit)
+			const paths = g.selectAll(`path.${segmentType}`) // タイプごとに選択
+				.data(pieData, d => d.data.name); // キー関数でデータ結合
+
+			// Exit (不要な要素を削除) - 今回はグループごと消すので不要かも
+
+			// Enter (新しい要素を追加)
+			const enterPaths = paths.enter().append("path")
+				.attr("class", segmentType) // クラス名を設定
+				.attr("fill", d => colorScale(d.data.name));
+
+			// Update + Enter (既存要素と新規要素の属性を設定)
+			paths.merge(enterPaths)
+				.attr("d", arcGenerator); // d属性を更新/設定
+		}
+
+		// --- 12時位置の区切り線描画関数 ---
+		function drawSeparatorLine(targetId) {
+			const svg = d3.select(`#${targetId}`);
+			const g = svg.select(`g.${'outer-donut-group'}`); // 外側グループを基準にする (どちらでも良い)
+
+			if (!g.empty()) {
+				// 既存の線があれば削除
+				g.select(".separator-line").remove();
+
+				// 白い線を描画 (グループ内の座標系で、回転(-90度)されていることを考慮)
+				// 回転前は3時方向が0度なので、12時方向は-90度 = -Math.PI / 2
+				// 回転後は、描画グループ内で (0, -radius) から (0, -innerRadiusInner) へ線を引く
+				const lineEndX = 0; // x座標は中心
+				const lineEndYOuter = -outerRadiusOuter; // 外側ドーナツの外周
+		      const lineEndYInner = -innerRadiusInner; // 内側ドーナツの内周 (線の開始点)
+				const strokeWidth = 3; // 線の太さ (viewBox基準)
+
+				g.append("line")
+					.attr("class", "separator-line")
+					.attr("x1", lineEndX)
+					.attr("y1", lineEndYInner) // 内側から開始
+					.attr("x2", lineEndX)
+					.attr("y2", lineEndYOuter) // 外側へ
+					.attr("stroke", "white")
+					.attr("stroke-width", strokeWidth);
+			}
+		}
+
+		// ダミーデータ
+		const dummyDataPage3 = { 自家発電: 30, オフサイト1: 10, オフサイト2: 15, オフサイト3: 5, 購入電力: 40 };
+		const dummyDataPage4 = { 自家発電: 20, オフサイト1: 5, オフサイト2: 10, オフサイト3: 15, 購入電力: 50 }; // 仮データ
+		const dummyDataPage5 = { 自家発電: 50, オフサイト1: 20, オフサイト2: 5, オフサイト3: 5, 購入電力: 20 }; // 仮データ
+
+		// 各ページのグラフを描画
+		drawDonutSegment('donut-chart-page3', dummyDataPage3, 'inner');
+		drawDonutSegment('donut-chart-page3', dummyDataPage3, 'outer');
+		drawDonutSegment('donut-chart-page4', dummyDataPage4, 'inner');
+		drawDonutSegment('donut-chart-page4', dummyDataPage4, 'outer');
+		drawDonutSegment('donut-chart-page5', dummyDataPage5, 'inner');
+		drawDonutSegment('donut-chart-page5', dummyDataPage5, 'outer');
+		// 区切り線を描画
+		drawSeparatorLine('donut-chart-page3');
+		drawSeparatorLine('donut-chart-page4');
+		drawSeparatorLine('donut-chart-page5');
+
+		// TODO: データ更新時の再描画処理 (例)
+		// function updateChart(pageId, newData) {
+		//   drawDonutSegment(pageId, newData, 'inner');
+		//   drawDonutSegment(pageId, newData, 'outer');
+		// }
+		// const dummyDataPage5 = { ... };
+		// drawDonutChart('donut-chart-page5', dummyDataPage5);
+	</script>
+</body>
+</html>

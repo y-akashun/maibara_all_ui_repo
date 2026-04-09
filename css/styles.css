@@ -1,0 +1,176 @@
+body,div,p { margin:0; padding:0;}
+.content{position:relative;}
+
+.background{position:fixed;top:0;left:0;width:100vw;z-index: -1;}
+.background img{width:100vw;}
+
+.header {display:flex; flex-direction: row; width:100vw;top:1vw;position: fixed;}
+
+
+
+.title { display:flex; flex-direction: column;}
+.title .main {
+	display:flex; flex-direction: row; align-items: center; justify-content: center;background-color: #fff;width:52.8vw;height:5.2vw;
+	border:4px solid #6bc1a8; border-left:0; border-radius: 0 75px 75px 0;
+}
+.title .main .main-text1 { font-size:2.5vw; font-family: "Zen Maru Gothic", serif; font-weight: 700;font-style: normal;color:#007440;}
+.title .main .main-text2 { font-size:1.98vw; font-family: "Zen Maru Gothic", serif; font-weight: 700;font-style: normal;color:#007440;}
+
+.title .sub {width:fit-content;padding-left:3.5vw;height:3vw;background-color: #6BC1A8;border-radius: 0 50vw 50vw 0 ;padding-right: 2vw;box-sizing: border-box;text-align: right;}
+.title .sub .sub-text1 {font-size:1.82vw; font-family: "Zen Maru Gothic", serif; font-weight: 700;font-style: normal;color:#fff;}
+
+.page {}
+
+/* .hidden {display:none;} */ /* hiddenクラスは一旦コメントアウト */
+
+.page {
+	position: absolute; /* 重ねて表示するため */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0; /* 初期状態は透明 */
+	transition: opacity 1s ease-in-out; /* フェードアニメーション */
+	pointer-events: none; /* 非アクティブ時は操作不可に */
+}
+
+.page.active {
+	opacity: 1;
+	pointer-events: auto; /* アクティブ時は操作可能に */
+	z-index: 1; /* アクティブなページを手前に */
+}
+
+.page.inactive {
+	display: none; /* 非表示にする */
+	z-index: 0;
+}
+
+.page.fade-in {
+	opacity: 1;
+}
+
+.page.fade-out {
+	opacity: 0;
+}
+
+.recycle-sammery {display: flex;flex-direction: row;font-family: "Zen Maru Gothic", serif; font-weight: 700;font-style: normal;}
+.recycle-sammery .label {width:10.4vw;height:5.2vw;background-color: #4B9E81;border-radius: 50vw 0 0 50vw;border:4px solid #6BC1A8;border-right: 0;display:flex;flex-direction:column;align-items: center;justify-content: center;}
+.recycle-sammery .label .text1{color:#ffffff;font-size: 1.19vw;line-height: 1.19vw;}
+.recycle-sammery .label .text2{color:#ffffff;font-size: 1.87vw;}
+.recycle-sammery .value {width:10.4vw;height:5.2vw;line-height: 5.2vw;background-color: #ffffff;border-radius: 0 50vw 50vw 0;border:4px solid #6BC1A8;border-left: 0;display:flex;flex-direction:row;align-items: baseline;justify-content: center;}
+.recycle-sammery .value .text1{color:#007440;font-size: 4.16vw;}
+.recycle-sammery .value .text2{color:#007440;font-size: 1.92vw;}
+
+.reduction-sammery {display: flex;flex-direction: row;font-family: "Zen Maru Gothic", serif; font-weight: 700;font-style: normal;}
+.reduction-sammery .label {width:10.4vw;height:5.2vw;background-color: #4B9E81;border-radius: 50vw 0 0 50vw;border:4px solid #6BC1A8;border-right: 0;display:flex;flex-direction:column;align-items: center;justify-content: center;}
+.reduction-sammery .label .text1{color:#ffffff;font-size: 1.19vw;line-height: 1.19vw;}
+.reduction-sammery .label .text2{color:#ffffff;font-size: 1.87vw;}
+.reduction-sammery .value {width:10.4vw;height:5.2vw;line-height: 5.2vw;background-color: #ffffff;border-radius: 0 50vw 50vw 0;border:4px solid #6BC1A8;border-left: 0;display:flex;flex-direction:row;align-items: baseline;justify-content: center;}
+.reduction-sammery .value .text1{color:#007440;font-size: 4.16vw;}
+.reduction-sammery .value .text2{color:#007440;font-size: 1.92vw;}
+
+
+.main {}
+.main .plant {font-size:2.08vw; font-family: "Zen Maru Gothic", serif; font-weight: 700;font-style: normal;color:#007440;}
+.main .plant .line1 {font-size:2.08vw; }
+.main .plant .line2 {font-size:1.51vw; }
+
+.main .sakata {position:absolute;top:19.16vw;left:6.51vw;}
+.main .chuo {position:absolute;top:20.2vw;left:28.9vw;}
+.main .siyakusho {position:absolute;top:20.2vw;left:53.8vw;}
+.main .umegahara013 {font-size:2.39vw;color:#c6c6c6;position:absolute;top:31.8vw;left:23vw;}
+.main .umegahara012 {font-size:2.39vw;color:#c6c6c6;position:absolute;top:47vw;left:23vw;}
+.main .koizumi013 {font-size:2.39vw;color:#c6c6c6;position:absolute;top:24vw;left:75.5vw;}
+
+/* Coming Soon スタイル */
+.comingsoon::after {
+  content: '';
+  display: block;
+  width: 10vw;  /* 画像の表示幅 (必要に応じて調整) */
+  height: 2.55vw; /* 画像の表示高さ (必要に応じて調整) */
+  background-image: url('../img/comingsoon.svg'); /* 画像ファイルのパス */
+  background-repeat: no-repeat; /* 画像を繰り返さない */
+  background-size: contain; /* 画像を要素内に収める */
+  background-position: center; /* 画像を中央に配置 */
+  margin-top:-0.5vw;
+  margin-left: auto; /* 水平中央揃え */
+  margin-right: auto; /* 水平中央揃え */
+}
+
+
+.overview .layoutbox{ display: flex;flex-direction: row; justify-content: space-evenly; align-items: center; margin-top:10.41vw;}
+.overview .power-generation-area { width:35.10vw;height:41.04vw;background-image: url(../img/power-generation-area.svg);background-size: contain;padding-top: 4.5vw;padding-left:0.4vw;box-sizing: border-box;}
+.overview .arrow img {width:8.07vw;}
+.overview .power-consumption-area { width:44.21vw;height:41.04vw;background-image: url(../img/power-consumption-area.svg);background-size: contain;padding-top: 4.5vw;padding-left:0.4vw;box-sizing: border-box;}
+
+.overview .info-panel {display: flex;flex-direction: column;font-family: "Zen Maru Gothic", serif; font-weight: 500;font-style: normal;color:#007440;height:12.25vw;}
+.overview .panel-title {font-size: 2.34vw;display: flex;flex-direction: row;align-items: baseline;line-height: 1.8vw;padding-bottom: 0.4vw;padding-left:0.6vw;justify-content: flex-start;margin-bottom: 0.6vw;}
+.overview .power-generation-area .panel-title {border-left:0.6vw solid #E68600;}
+.overview .power-consumption-area .panel-title {border-left:0.6vw solid #007440;}
+.overview .title-text1 {font-size: 1.87vw;}
+.overview .title-text2 {font-size: 1.45vw;}
+
+.overview .panel-contents {display: flex;flex-direction: row;justify-content: space-evenly;}
+.overview .panel-content {display: flex;flex-direction: row; align-items: center; justify-content: space-evenly;gap:0.5vw;}
+
+.overview .content-pic {margin-right:0.5vw;}
+.overview .battery {width:4.19vw;}
+.overview .solar1 {width:4.98vw;}
+.overview .solar2 {width:8.61vw;}
+.overview .solar3 {width:10.46vw;}
+.overview .maibara-city-hall-illustration {width:20.7vw;}
+.overview .central-research-lab-illustration {width:20.7vw;}
+.overview .sakata-inx-illustration-alt {width:20.7vw;}
+
+.overview .content-box {border:0.20vw solid #C6C6C6;border-radius: 0.62vw;background-color: #fff;padding:0.37vw 0.62vw 0.31vw 0.62vw;text-align: center;}
+.overview .normal-box {width:8.27vw;}
+.overview .narrow-box {width:6.29vw;}
+.overview .box-title {font-size: 1.14vw;border-bottom:1px solid #007440;line-height: 1.7vw;}
+.overview .box-value {font-size: 4.16vw;line-height: 4vw;font-weight: 700;}
+.overview .box-unit {font-size: 1.04vw;line-height: 1vw;}
+
+
+.state .left-pane {width:21.87vw;position:absolute;top:15.83vw;left:5.98vw;display: flex;flex-direction:column;gap:0.5vw;color:#007440;}
+.state .right-pane {width:21.87vw;position:absolute;top:15.83vw;left:72.13vw;display: flex;flex-direction:column;gap:0.5vw;color:#007440;}
+.state .info-box {padding:0 0.3vw 0.3vw;border-radius: 0.26vw;display:flex;flex-direction: column;gap:0.15vw;font-family: "Zen Maru Gothic", serif; font-weight: 700;font-style: normal;background-color: #fff;}
+.state .info-title {font-size: 1.56vw;display:flex;flex-direction: row;align-items: baseline;justify-content: center;line-height: 2.5vw;}
+.state .info-title .text2{font-size: 1.14vw;}
+.state .state-box {padding:0.5vw;display: flex;flex-direction: column;}
+.state .state-title {font-size:1.3vw;line-height: 1.3vw;text-align: center;}
+.state .values-box {display:flex;flex-direction: row;align-items: baseline;justify-content: space-evenly;}
+.state .value-box {display:flex;flex-direction: row;align-items: baseline;}
+.state .value1 {font-size:4.11vw;line-height: 3.43vw;}
+.state .unit1 {font-size:1.56vw;line-height: 1.56vw;margin-left:0.4vw; font-weight: 500;}
+.state .value2 {font-size:3.43vw;line-height: 3.43vw;}
+.state .unit2 {font-size:1.56vw;line-height: 1.56vw;margin-left:0.4vw; font-weight: 500;}
+
+.state .white-bg {background-color: #fff;}
+.state .blue-bg {background-color: #5282D0;}
+.state .yellow-bg {background-color: #FAD764;}
+
+.state .white-text {color:#fff;}
+.state .green-text {color:#007440;}
+.state .gray-text {color:#7B7972}
+
+.state .value-separator-white {height:3.48vw;border-left:1px solid #fff}
+.state .value-separator-green {height:3.48vw;border-left:1px solid #007440;height:2.91vw !important;}
+.state .value-separator-gray {height:3.48vw;border-left:1px solid #7B7972}
+
+
+/* ドーナツグラフ用SVGのスタイル */
+.page .background {
+	position: relative; /* 子要素の絶対位置指定の基準にする */
+}
+
+.donut-chart {
+	position: absolute;
+	top: 12.3vw; /* 親要素の垂直中央 */
+	left: 31.5vw; /* 親要素の水平中央 */
+	/* transform: translate(-50%, -50%); 要素自身のサイズを考慮して中央揃え */
+	width: 39.5vw; /* 仮の幅 (要調整) */
+	height: 39.5vw; /* 仮の高さ (要調整) */
+	/* background-color: rgba(255, 0, 0, 0.1); /* 位置確認用 */
+	pointer-events: none; /* 下の要素をクリックできるように */
+}
+
+
